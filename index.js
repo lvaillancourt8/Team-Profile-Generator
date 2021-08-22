@@ -14,8 +14,9 @@ const Intern = require('./lib/Intern');
 // const engineerQuestions = require('./lib/questions');
 // const internQuestions = require('./lib/questions');
 
+const html = require("./src/generatehtml");
+
 const employeesList = [];
-const cardList = [];
 
 // List of Questions for each employee type
 const managerQuestions = [
@@ -177,23 +178,8 @@ function addIntern() {
   });
 }
 
-function generateHTML(employeesList) {
-    employeesList.forEach(element => {
-        const card = `
-        <div class="card">
-        <div class="card-header">
-        <h2>${this.name}</h2>
-        <i>icon</i><h3>Title</h3>
-        </div>
-        <div class="card-body">
-            <ul class="list-group">
-            <li class="list-group-item id">ID: 4</li>
-            <li class="list-group-item email">Email: <a href="mailto:email@email.com">email.com</a></li>
-            <li class="list-group-item info">Label: info</li>
-            </ul>
-        </div>    
-    </div>`
-    });
+function generateHTML() {
+    fs.writeFile('./dist/index.html', html())
 }
 
 init();  
