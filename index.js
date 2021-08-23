@@ -179,7 +179,7 @@ function addIntern() {
 }
 
 function generateHTML() {
-    fs.writeFile('./dist/index.html', html())
+    fs.writeFile('./dist/index.html', html(employeesList));
 }
 
 init();  
