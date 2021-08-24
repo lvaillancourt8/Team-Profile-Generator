@@ -11,6 +11,7 @@ function generateWebPage(data) {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="./stylesheet.css">
         <title>Team Roster</title>
     </head>
@@ -51,7 +52,7 @@ function html(data) {
                 <div class="card">
                     <div class="card-header">
                         <h2>${Manager.name}</h2>
-                        <i>icon</i><h3>Manager</h3>
+                        <i class="glyphicon glyphicon-briefcase"></i><h3>Manager</h3>
                     </div>
                     <div class="card-body">
                         <ul class="list-group">
@@ -74,12 +75,12 @@ function html(data) {
                 <div class="card">
                     <div class="card-header">
                         <h2>${Engineer.name}</h2>
-                        <i>icon</i><h3>Engineer</h3>
+                        <i class="glyphicon glyphicon-wrench" style="color:blue"></i><h3>Engineer</h3>
                     </div>
                     <div class="card-body">
                         <ul class="list-group">
                         <li class="list-group-item id">ID: ${Engineer.id}</li>
-                        <li class="list-group-item email">Email: <a href="${Engineer.email}">${Engineer.email}</a></li>
+                        <li class="list-group-item email">Email: <a href="mailto:${Engineer.email}">${Engineer.email}</a></li>
                         <li class="list-group-item github">GitHub: <a href="https://github.com/${Engineer.github}">${Engineer.github}</a></li>
                         </ul>
                     </div>    
@@ -97,12 +98,12 @@ function html(data) {
                 <div class="card">
                     <div class="card-header">
                         <h2>${Intern.name}</h2>
-                        <i>icon</i><h3>Intern</h3>
+                        <i class="glyphicon glyphicon-apple" style="color:red"></i><h3>Intern</h3>
                     </div>
                     <div class="card-body">
                         <ul class="list-group">
                         <li class="list-group-item id">ID: ${Intern.id}</li>
-                        <li class="list-group-item email">Email: <a href="${Intern.email}">${Intern.email}</a></li>
+                        <li class="list-group-item email">Email: <a href="mailto:${Intern.email}">${Intern.email}</a></li>
                         <li class="list-group-item school">School: ${Intern.school}</li>
                         </ul>
                     </div>    
