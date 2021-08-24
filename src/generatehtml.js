@@ -57,7 +57,7 @@ function html(data) {
                     <div class="card-body">
                         <ul class="list-group">
                         <li class="list-group-item id">ID: ${Manager.id}</li>
-                        <li class="list-group-item email">Email: <a href="${Manager.email}">${Manager.email}</a></li>
+                        <li class="list-group-item email">Email: <a href="mailto:${Manager.email}">${Manager.email}</a></li>
                         <li class="list-group-item info">Office Number: ${Manager.officeNumber}</li>
                         </ul>
                     </div>    
@@ -81,7 +81,7 @@ function html(data) {
                         <ul class="list-group">
                         <li class="list-group-item id">ID: ${Engineer.id}</li>
                         <li class="list-group-item email">Email: <a href="mailto:${Engineer.email}">${Engineer.email}</a></li>
-                        <li class="list-group-item github">GitHub: <a href="https://github.com/${Engineer.github}">${Engineer.github}</a></li>
+                        <li class="list-group-item github">GitHub: <a href="https://github.com/${Engineer.github}"  target="_blank">${Engineer.github}</a></li>
                         </ul>
                     </div>    
                 </div>
