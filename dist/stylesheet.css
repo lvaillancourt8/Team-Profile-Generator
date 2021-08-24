@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    background-color: #0f6070;
+    color: white;
+}
+
+i {
+    margin: 0 10px 0 0;
+    display:inline-block
+}
+
+h3 {
+    display: inline-block;
+}
+
+.row {
+    justify-content: center;
+}
+
+.card {
+    margin: 30px 0 0 0;
+}
+
+.card-header {
+    background-color: #438b99;
+    color: white;
+}
+
+.card-body {
+    background-color: gainsboro;
+}
+
+.glyphicon {
+    font-size: 30px;
+}
